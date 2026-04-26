@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme{
+  --color-bgg: #E8DED5;
+  --color-btn: #4E342E;
+  --font-pop: "Poppins", sans-serif;
+}
+
+@layer {
+  .defaultfs {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

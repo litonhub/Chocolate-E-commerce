@@ -1,0 +1,18 @@
+import './App.css'
+import { Routes, Route } from "react-router";
+import Home from './pages/Home';
+import MainLayouts from './components/layouts/MainLayouts';
+
+function App() {
+
+
+  return (
+    <Routes>
+      <Route element={<MainLayouts />}>
+        <Route path="/" element={<Home />} />
+      </Route>
+    </Routes>
+  )
+}
+
+export default App
