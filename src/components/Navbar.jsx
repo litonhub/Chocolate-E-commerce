@@ -4,6 +4,7 @@ import Logo from '../assets/images/logo.png'
 import { PiShoppingCartLight } from "react-icons/pi";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
+import { Link } from 'react-router';
 
 const Navbar = () => {
 
@@ -20,10 +21,10 @@ const Navbar = () => {
       <Container>
         <div className="flex items-center justify-between">
           <div className="flex gap-x-12.5 items-center">
-            <img src={Logo} alt="logo" />
+            <Link to="/"><img src={Logo} alt="logo" /></Link>
             <div className="flex gap-x-4 items-center font-pop text-sm font-normal">
-              <button className='border border-btn py-2.25 px-7.5 text-[#34231F] rounded-[20px] hover:bg-btn hover:text-[#F5F5F5] transition-all duration-300 ease-in-out'>Login</button>
-              <button className='border border-btn py-2.25 px-6 text-[#34231F] rounded-[20px] hover:bg-btn hover:text-[#F5F5F5] transition-all duration-300 ease-in-out'>Sign up</button>
+              <Link to="/login" className='border border-btn py-2.25 px-7.5 text-[#34231F] rounded-[20px] hover:bg-btn hover:text-[#F5F5F5] transition-all duration-300 ease-in-out'>Login</Link>
+              <Link to="/signup" className='border border-btn py-2.25 px-6 text-[#34231F] rounded-[20px] hover:bg-btn hover:text-[#F5F5F5] transition-all duration-300 ease-in-out'>Sign up</Link>
             </div>
           </div>
 
